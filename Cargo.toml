@@ -1,0 +1,16 @@
+[package]
+name = "rust_hello_api"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["lib"]
+name = "helloworld_lib"
+path = "src/lib.rs"
+
+[dependencies]
+tonic = "0.6"
+prost = "0.9"
+
+[build-dependencies]
+tonic-build = "0.6"
